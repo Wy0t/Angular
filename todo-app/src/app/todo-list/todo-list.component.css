@@ -1,0 +1,68 @@
+/* 置中整個容器 */
+.todo-container {
+    max-width: 800px; /* 限制寬度，避免太寬 */
+    margin: 0 auto; /* 水平置中 */
+    padding: 20px; /* 內距 */
+    text-align: center; /* 標題置中 */
+  }
+  
+  /* 輸入區域 */
+  .input-section {
+    margin-bottom: 20px;
+  }
+  
+  .input-section input {
+    padding: 5px;
+    width: 70%; /* 輸入框佔大部分寬度 */
+    max-width: 400px;
+  }
+  
+  .input-section button {
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+  
+  /* 任務列表 */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex; /* 使用Flexbox排列每一行 */
+    justify-content: space-between; /* 內容分散對齊 */
+    align-items: center; /* 垂直置中 */
+    margin: 10px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd; /* 底線增加可讀性 */
+  }
+  
+  /* 任務文字固定寬度 */
+  .task-text {
+    flex: 1; /* 自適應寬度 */
+    text-align: left; /* 文字靠左 */
+    margin-right: 10px;
+    word-break: break-word; /* 長文字自動換行 */
+  }
+  
+  /* 時間戳記固定寬度 */
+  .timestamp {
+    flex: 0 0 200px; /* 固定200px寬度 */
+    color: #666;
+    text-align: center; /* 置中顯示 */
+  }
+  
+  /* 刪除按鈕 */
+  .task-item button {
+    flex: 0 0 60px; /* 固定按鈕寬度 */
+    padding: 5px;
+  }
+
+  .task-item {
+    background-color: #16a9ce;
+    border-radius: 5px;
+  }
+  .todo-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #78d7fc79;
+  }

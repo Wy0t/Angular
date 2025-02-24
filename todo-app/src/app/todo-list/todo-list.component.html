@@ -1,0 +1,14 @@
+<div class="todo-container">
+  <h2>待辦事項清單</h2>
+  <div class="input-section">
+    <input type="text" [(ngModel)]="newTask" placeholder="輸入新任務" (keyup.enter)="addTask()">
+    <button (click)="addTask()">新增</button>
+  </div>
+  <ul>
+    <li *ngFor="let item of tasks; let i = index" class="task-item">
+      <span class="task-text">{{ item.task }}</span>
+      <span class="timestamp">{{ item.timestamp }}</span>
+      <button (click)="removeTask(i)">刪除</button>
+    </li>
+  </ul>
+</div>
